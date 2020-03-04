@@ -1,0 +1,20 @@
+
+*, head, body{margin: 0; padding: 0; text-decoration: none; outline: none; box-sizing: border-box; list-style: none; font-family: 'Roboto'}
+.card-title{
+    color: #0c5460;
+    font-size: 32px;
+}
+.card-description{
+    color: #1b1e21;
+    font-size: 24px;
+}
+.card-footer-text{
+    font-size: 26px;
+    color: #ffc107;
+}
+pre{
+    font-size: 18px;
+}
+.tests{
+    font-size: 25px;
+}

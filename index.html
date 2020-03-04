@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Demo #1</title>
+</head>
+<body>
+    <a href="./index_test.html" class="tests" target="_blank">Link to tests</a>
+<nav class="nav justify-content-center">
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task1" role="button" aria-expanded="false" aria-controls="task1">Task 1</a>
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task2" role="button" aria-expanded="false" aria-controls="task2">Task 2</a>
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task3" role="button" aria-expanded="false" aria-controls="task3">Task 3</a>
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task4" role="button" aria-expanded="false" aria-controls="task4">Task 4</a>
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task5" role="button" aria-expanded="false" aria-controls="task5">Task 5</a>
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task6" role="button" aria-expanded="false" aria-controls="task6">Task 6</a>
+    <a class="nav-link btn btn-primary active m-4" data-toggle="collapse" href="#task7" role="button" aria-expanded="false" aria-controls="task7">Task 7</a>
+</nav>
+<div class="container">
+    <div class="collapse" id="task1">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">1. Шахматная доска</h2>
+            <p class="text-center font-weight-bolder card-description">Вывести шахматную доску с заданными размерами высоты и ширины</p>
+            <form id="f0">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputWidth">Ширина</label>
+                        <input type="text" class="form-control" id="inputWidth" name="width" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputHeight">Высота</label>
+                        <input type="text" class="form-control" id="inputHeight" name="height" >
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputChar">Символ</label>
+                        <input type="text" class="form-control" id="inputChar" name="char" >
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="0"></pre>
+        </div>
+    </div>
+    <div class="collapse" id="task2">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">2. Анализ конвертов</h2>
+            <p class="text-center font-weight-bolder card-description">Есть два конверта со сторонами (a,b) и (c,d). Требуется определить, можно ли один конверт вложить в другой. Программа должна обрабатывать ввод чисел с плавающей точкой. </p>
+            <form id="f1">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Ширина (I конверта)</label>
+                        <input type="text" class="form-control" id="inputWidthI" name="wOne">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputHeight">Высота (I конверта)</label>
+                        <input type="text" class="form-control" id="inputHeightI" name="hOne">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Ширина (II конверта)</label>
+                        <input type="text" class="form-control" id="inputWidthII" name="wTwo">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputHeight">Высота (II конверта)</label>
+                        <input type="text" class="form-control" id="inputHeightII" name="hTwo">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="1"></pre>
+        </div>
+    </div>
+    <div class="collapse" id="task3">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">3. Сортировка треугольников</h2>
+            <p class="text-center font-weight-bolder card-description">Вывести треугольники в порядке убывания их площади.</p>
+            <form id="f2">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputWidth">Имя треугольника (АВС)</label>
+                        <input type="text" class="form-control" id="tName" name="vertices">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputHeight">Размер первой стороны (А)</label>
+                        <input type="text" class="form-control" id="tFirst" name="tF">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputHeight">Размер второй стороны (В)</label>
+                        <input type="text" class="form-control" id="tSecond" name="tS">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputHeight">Размер третьей стороны (С)</label>
+                        <input type="text" class="form-control" id="tThird" name="tT">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Добавить треугольник</button>
+                <a href="#" class="btn btn-secondary">Отсортировать</a>
+            </form>
+            <pre class="t-list mt-2" id="t-list">Список треугольников:</pre>
+            <ul id = 'myUl'></ul>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="2"></pre>
+        </div>
+    </div>
+    <div class="collapse" id="task4">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">4. Палиндром</h2>
+            <p class="text-center font-weight-bolder card-description">Проверить является ли число или его часть палиндромом. Например, число 1234437 не является палиндромом, но является палиндромом его часть 3443. Числа меньшие, чем 10 палиндромом не считать.</p>
+            <form id="f3">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Число</label>
+                        <input type="text" class="form-control" id="number" name="number">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="3"></pre>
+        </div>
+    </div>
+    <div class="collapse" id="task5">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">5. Счастливые билеты</h2>
+            <p class="text-center font-weight-bolder card-description">Определить программно какой вариант подсчёта счастливых билетов даст их большее количество на заданном интервале.</p>
+            <form id="f4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Min номер билета</label>
+                        <input type="text" class="form-control" id="ticketMin" name="ticketMin">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Max номер билета</label>
+                        <input type="text" class="form-control" id="ticketMax" name="ticketMax">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="4"></pre>
+        </div>
+    </div>
+    <div class="collapse" id="task6">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">6. Числовая последовательность</h2>
+            <p class="text-center font-weight-bolder card-description">Вывести через запятую ряд длиной n, состоящий из натуральных чисел, квадрат которых не меньше заданного m.</p>
+            <form id="f5">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Длина</label>
+                        <input type="text" class="form-control" id="length" name="length">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Минимальный квадрат</label>
+                        <input type="text" class="form-control" id="minPow" name="minPow">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="5"></pre>
+        </div>
+    </div>
+    <div class="collapse" id="task7">
+        <div class="card card-body">
+            <h2 class="text-left font-weight-bold card-title text-uppercase mb-2">7. Ряд Фибоначчи для диапазонаь</h2>
+            <p class="text-center font-weight-bolder card-description">Вывести все числа Фибоначчи, которые удовлетворяют переданному в функцию ограничению: находятся в указанном диапазоне, либо имеют указанную длину.</p>
+            <form id="f6-1">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Min</label>
+                        <input type="text" class="form-control" id="minFib" name="min">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Max</label>
+                        <input type="text" class="form-control" id="maxFib" name="max">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+            <hr>
+            <form id="f6-2">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputWidth">Длина</label>
+                        <input type="text" class="form-control" id="lengthFib" name="length">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Результат</button>
+            </form>
+        </div>
+        <div class="card card-footer">
+            <h2 class="text-left font-weight-bold card-footer-text text-uppercase mb-2">Результат:</h2>
+            <pre class="result-block" id="6"></pre>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
